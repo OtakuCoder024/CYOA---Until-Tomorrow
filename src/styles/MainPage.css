@@ -130,3 +130,32 @@ footer{
 
     font-size:.8rem;
 }
+
+
+@media (max-width: 768px){
+    .title{
+        font-size: 4rem;
+    }
+    .menu{
+        padding-left: 2rem;
+    }
+    .divider{
+        width: min(300px, 90vw);
+    }
+    .long-intro{
+        max-width:300px;
+        font-size: .8rem;
+    }
+    .short-intro{
+        font-size: 8px;
+    }
+    footer{
+        right:10px;
+        bottom:10px;
+        font-size:.7rem;
+    }
+    .new-game,
+    .continue{
+        width:min(300px,90vw);
+    }
+}
