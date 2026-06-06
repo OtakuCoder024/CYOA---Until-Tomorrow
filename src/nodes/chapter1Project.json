@@ -1,0 +1,70 @@
+{
+  "id": "chapter_1_project",
+
+  "metadata": {
+    "chapter": 1,
+    "day": 1,
+    "title": "One More Bug",
+    "pov": "lance"
+  },
+
+  "flags": [
+    "worked_on_project"
+  ],
+
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Lance ignored the notifications."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Whatever was happening in Manila could wait."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "The bug couldn't."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "After another twenty minutes of testing, recompiling, and questioning his own intelligence, he finally found the problem."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "A missing condition. One line."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "The device sprang to life."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "A small victory, but a satisfying one."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "His phone buzzed several more times."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "He ignored those too."
+    }
+  ],
+
+  "choices": [
+    {
+      "id": "continue",
+      "icon": "arrow_forward",
+      "text": "Continue",
+      "next": "chapter_2"
+    }
+  ]
+}

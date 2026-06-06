@@ -1,0 +1,123 @@
+{
+  "id": "chapter_1",
+
+  "metadata": {
+    "chapter": 1,
+    "day": 1,
+    "title": "Saturday Morning",
+    "pov": "lance"
+  },
+
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "The electric fan rattled softly as it pushed warm air around the room."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Lance sat at his desk staring at lines of code that had looked promising three hours ago and confusing for the last thirty minutes."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "His apartment wasn't large. A bed occupied one corner. A cluttered workbench filled another. Loose wires, sensors, tools, and unfinished electronics projects covered nearly every available surface."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "A cold cup of coffee sat beside his keyboard. Outside, motorcycles passed occasionally while someone's karaoke machine fought a losing battle against the morning heat."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Normal. Annoyingly normal."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "A notification appeared on his monitor."
+    },
+
+    {
+      "type": "notification",
+      "title": "BREAKING NEWS",
+      "text": "Violent Incident in Manila Leaves Several Injured"
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Lance barely glanced at it."
+    },
+
+    {
+      "type": "notification",
+      "title": "TRENDING",
+      "text": "#ManilaAttack"
+    },
+
+    {
+      "type": "paragraph",
+      "text": "That earned slightly more attention."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "His phone vibrated."
+    },
+
+    {
+      "type": "message_group",
+      "sender": "College Friends GC",
+      "messages": [
+        {
+          "sender": "Miguel",
+          "text": "Bro, somebody sent me a weird video."
+        },
+        {
+          "sender": "Jerome",
+          "text": "Fake."
+        },
+        {
+          "sender": "Miguel",
+          "text": "I swear it's not."
+        },
+        {
+          "sender": "Jerome",
+          "text": "Here we go again."
+        }
+      ]
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Lance smirked. Another day online. Another conspiracy theory."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "His stomach growled. Breakfast sounded more productive than arguing with strangers on the internet."
+    }
+  ],
+
+"choices": [
+  {
+    "id": "check_video",
+    "icon": "play_circle",
+    "text": "Check the strange video from the group chat.",
+    "next": "chapter_1_video"
+  },
+  {
+    "id": "continue_working",
+    "icon": "memory",
+    "text": "Ignore the distractions and continue working.",
+    "next": "chapter_1_project"
+  },
+  {
+    "id": "make_breakfast",
+    "icon": "restaurant",
+    "text": "Take a break and make breakfast.",
+    "next": "chapter_1_breakfast"
+  }
+]
+}

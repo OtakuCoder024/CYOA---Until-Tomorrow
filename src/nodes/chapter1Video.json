@@ -1,0 +1,90 @@
+{
+  "id": "chapter_1_video",
+
+  "metadata": {
+    "chapter": 1,
+    "day": 1,
+    "title": "The Video",
+    "pov": "lance"
+  },
+
+  "flags": [
+    "saw_viral_video"
+  ],
+
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Curiosity won."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Lance opened the video Miguel had sent."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "The footage was shaky, filmed from inside a convenience store somewhere in Manila."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "People were running. Someone screamed. A man tackled another person to the ground."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "At first it looked like an ordinary fight."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Then the man on top bit into the other person's neck."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "The video ended abruptly."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Lance frowned."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Fake videos were getting harder and harder to identify these days."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Still... something about it felt wrong."
+    },
+
+    {
+      "type": "message_group",
+      "sender": "College Friends GC",
+      "messages": [
+        {
+          "sender": "Miguel",
+          "text": "See? Told you."
+        },
+        {
+          "sender": "Jerome",
+          "text": "Movie promotion."
+        }
+      ]
+    }
+  ],
+
+  "choices": [
+    {
+      "id": "continue",
+      "icon": "arrow_forward",
+      "text": "Continue",
+      "next": "chapter_2"
+    }
+  ]
+}

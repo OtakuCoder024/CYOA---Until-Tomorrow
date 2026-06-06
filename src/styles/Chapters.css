@@ -1,4 +1,5 @@
 .navbar{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -6,6 +7,79 @@
     border-bottom: 1px solid rgba(212, 175, 55, 0.15);
     background: rgba(0,0,0,.25);
     backdrop-filter: blur(3px);
+    font-family:'Inter';
+    z-index: 1;
+    user-select: none;
+}
+
+.nav-left{
+    position: relative;
+    display: flex;
+    gap: 3rem;
+    color: #d4af37;
+    font-family: 'Bebas Neue';
+    letter-spacing: 2px;
+}
+
+.menuContent{
+    width: 150px;
+    position: absolute;
+    top: calc(100% + 10px);
+    display: flex;
+    flex-direction: column;
+    left: 25px;
+    top: 55px;
+    backdrop-filter: blur(8px);
+    background: rgba(0,0,0,.45);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity .25s ease, transform .25s ease;
+    pointer-events: none;
+}
+
+.menuContent.open{
+    opacity:1;
+    transform:translateX(0);
+
+    pointer-events:auto;
+}
+
+.menuContent.closed{
+    opacity:0;
+    transform:translateX(-20px);
+
+    pointer-events:none;
+}
+
+.menuContent span{
+    padding: 20px;
+    color: white;
+}
+
+.menuContent .resume{
+    background: #d4af3786;
+    color: #000;
+    font-weight: 700;
+}
+
+.menuContent button{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 10px;
+    min-height:60px;
+    background: rgba(0,0,0,.45);
+    border-left: none;
+    font-family:'Inter', serif;
+    color: #d4af37;
+    transition: .3s;
+}
+
+.menuContent button:hover{
+    padding-left: 1.5rem;
+    border-left: 3px solid gold;
 }
 
 .nav-center{
@@ -18,7 +92,7 @@
 .nav-right{
     display: flex;
     gap: 2.5rem;
-    color: #bdbdbd;
+    color: #d4af37;
 }
 
 .nav-right svg:hover{
@@ -27,8 +101,131 @@
 }
 
 .chapter-body{
+    width: min(1100px, 80vw);
+    margin: auto;
+    margin-top: 2rem;
+    padding: 4rem;
+    background: rgba(0,0,0,.45);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    backdrop-filter: blur(2px);
+}
+
+.chapter-text{
+    font-family:'Lora', serif;
+    font-size:1.35rem;
+    height: 400px;
+    line-height:2;
+    color:rgba(255,255,255,.92);
+    margin-bottom: 2rem;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.pages-divider{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    margin-bottom: 2rem;
+}
+
+.pages-divider::before,
+.pages-divider::after{
+    content:'';
+    flex:1;
+    height:1px;
+    background:rgba(212,175,55,.5);
+}
+
+.pages-divider span{
+    color:#d4af37;
+}
+
+.choice{
     display: flex;
-    padding: 100px 20px;
-    text-align: left;
-    line-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem;
+    min-height:70px;
+    background: rgba(0,0,0,.3);
+    font-family:'Lora', serif;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    color: #d4af37;
+    transition: .3s;
+}
+
+.choice:hover{
+    border-color: #d4af37;
+    transform: translateX(5px);
+}
+
+.choice-left{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; 
+    width: 100%;
+    font-size: large;
+
+}
+
+.choice-left span{
+    margin-left: 1rem;
+}
+
+.choice-left svg{
+    font-size: 1.4rem;
+    color: #d4af37;
+}
+
+.choice-arrow{
+    font-size: 1.5rem;
+    color: #d4af37;
+    font-weight: 1000;
+}
+
+@media (max-width: 768px){
+    .navbar{
+        font-size: smaller;
+    }
+    .nav-left{
+        gap: 1rem;
+    }
+    .nav-right{
+        gap: 1rem;
+    }
+    .chapter-body{
+        width:85vw;
+        padding:1rem;
+    }
+    .chapter-text{
+        font-size: medium;
+        height: 450px;
+    }
+    .choice{
+        padding:1rem;
+    }
+    .choice.left{
+        flex:1;
+        gap:.75rem;
+    }
+    .choice-left .icon{
+        font-size: small;
+    }
+    .choice-left span{
+        margin-left: 1rem;
+        word-break: break-word;
+        margin-left:0;
+        font-size:.85rem;
+        line-height:1.4;
+    }
+    .choice-arrow{
+        flex-shrink:0;
+        margin-left:1rem;
+        font-size: small;
+    }
+    .menuContent{ 
+        background: rgba(0, 0, 0, 0.925);
+    }
 }

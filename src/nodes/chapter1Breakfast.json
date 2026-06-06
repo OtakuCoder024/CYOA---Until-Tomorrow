@@ -1,0 +1,81 @@
+{
+  "id": "chapter_1_breakfast",
+
+  "metadata": {
+    "chapter": 1,
+    "day": 1,
+    "title": "Breakfast First",
+    "pov": "lance"
+  },
+
+  "flags": [
+    "went_outside_early"
+  ],
+
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Food won."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Lance left his desk and headed outside."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "The small eatery down the street was already busy."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Construction workers occupied one table while several tricycle drivers argued over basketball."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Everything looked normal."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Almost."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "A television mounted in the corner displayed footage of police activity somewhere in Manila."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Most people weren't paying attention."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "One elderly man was."
+    },
+
+    {
+      "type": "dialogue",
+      "speaker": "Old Man",
+      "text": "Something's not right."
+    },
+
+    {
+      "type": "paragraph",
+      "text": "Nobody responded."
+    }
+  ],
+
+  "choices": [
+    {
+      "id": "continue",
+      "icon": "arrow_forward",
+      "text": "Continue",
+      "next": "chapter_2"
+    }
+  ]
+}
