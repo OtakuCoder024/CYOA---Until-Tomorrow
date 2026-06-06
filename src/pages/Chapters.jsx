@@ -2,6 +2,10 @@ import { useState } from "react";
 import { FaBars, FaHeart, FaCog, FaBook, FaSearch, FaDoorClosed, FaBoxOpen, FaPlay, FaSave, FaFile, FaHome, FaQuestion,  } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
+import JournalPage from "../components/JournalPage.jsx";
+import SettingPage from "../components/SettingPage.jsx";
+import StatusPage from "../components/StatusPage.jsx";
+import SuppliesPage from "../components/SuppliesPage.jsx";
 import { storyNodes } from "../utils/StoryNodes.jsx";
 import '../styles/Chapters.css';
 function Chapters(){
@@ -34,24 +38,16 @@ function Chapters(){
                 </div>
                 <div className="nav-right">
                     <FaHeart /> 
-                        <div className="statusPage">
-                            <span className="statusTitle"></span>
-                        </div>
+                    <StatusPage />
 
                     <FaBook /> 
-                        <div className="journalPage">
-
-                        </div>
+                    <JournalPage />
 
                     <FaBoxOpen />
-                        <div className="suppliesPage">
-
-                        </div>
+                    <SuppliesPage />
 
                     <FaCog />
-                        <div className="settingsPage">
-                            
-                        </div> 
+                    <SettingPage />
                 </div>
             </nav>
 
